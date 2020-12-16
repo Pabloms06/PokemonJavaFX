@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane alignment="center" hgap="10" style="-fx-background-color: pink;" vgap="10" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <columnConstraints>
+      <ColumnConstraints />
+      <ColumnConstraints />
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <Pane prefHeight="200.0" prefWidth="200.0" />
+      <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER">
+         <image>
+            <Image url="@../img/numero1.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="170.0" fitWidth="190.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.halignment="CENTER">
+         <image>
+            <Image url="@../img/numero2.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="190.0" fitWidth="210.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.hgrow="SOMETIMES" GridPane.valignment="CENTER">
+         <image>
+            <Image url="@../img/numero3.png" />
+         </image>
+         <GridPane.margin>
+            <Insets top="1.0" />
+         </GridPane.margin>
+      </ImageView>
+      <Pane prefHeight="200.0" prefWidth="210.0" GridPane.rowIndex="1">
+         <cursor>
+            <Cursor fx:constant="CLOSED_HAND" />
+         </cursor></Pane>
+      <ImageView fitHeight="180.0" fitWidth="210.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+         <image>
+            <Image url="@../img/numero4.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="180.0" fitWidth="210.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+         <image>
+            <Image url="@../img/numero5.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="170.0" fitWidth="180.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+         <image>
+            <Image url="@../img/numero6.png" />
+         </image>
+      </ImageView>
+   </children>
+</GridPane>
