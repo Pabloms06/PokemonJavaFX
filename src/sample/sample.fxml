@@ -2,6 +2,7 @@
 
 <?import javafx.geometry.*?>
 <?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
 <?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
 
@@ -10,24 +11,32 @@
       <ColumnConstraints />
       <ColumnConstraints />
       <ColumnConstraints />
+      <ColumnConstraints />
    </columnConstraints>
    <rowConstraints>
       <RowConstraints />
       <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
    </rowConstraints>
    <children>
-      <Pane prefHeight="200.0" prefWidth="200.0" />
-      <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER">
+      <Pane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="1">
+         <children>
+            <Label id="nombre1" layoutX="14.0" layoutY="6.0" text="Label" />
+            <Label id="nivel1" layoutX="168.0" layoutY="6.0" text="Label" />
+            <ProgressBar layoutX="5.0" layoutY="177.0" prefWidth="200.0" progress="1.0" />
+         </children></Pane>
+      <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER" GridPane.rowIndex="1">
          <image>
             <Image url="@../img/numero1.png" />
          </image>
       </ImageView>
-      <ImageView fitHeight="170.0" fitWidth="190.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.halignment="CENTER">
+      <ImageView fitHeight="170.0" fitWidth="190.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="1">
          <image>
             <Image url="@../img/numero2.png" />
          </image>
       </ImageView>
-      <ImageView fitHeight="190.0" fitWidth="210.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.hgrow="SOMETIMES" GridPane.valignment="CENTER">
+      <ImageView fitHeight="190.0" fitWidth="210.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.hgrow="SOMETIMES" GridPane.rowIndex="1" GridPane.valignment="CENTER">
          <image>
             <Image url="@../img/numero3.png" />
          </image>
@@ -35,24 +44,33 @@
             <Insets top="1.0" />
          </GridPane.margin>
       </ImageView>
-      <Pane prefHeight="200.0" prefWidth="210.0" GridPane.rowIndex="1">
+      <Pane prefHeight="200.0" prefWidth="210.0" GridPane.rowIndex="3">
          <cursor>
             <Cursor fx:constant="CLOSED_HAND" />
          </cursor></Pane>
-      <ImageView fitHeight="180.0" fitWidth="210.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+      <ImageView fitHeight="180.0" fitWidth="210.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER" GridPane.rowIndex="3">
          <image>
             <Image url="@../img/numero4.png" />
          </image>
       </ImageView>
-      <ImageView fitHeight="180.0" fitWidth="210.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+      <ImageView fitHeight="180.0" fitWidth="210.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="3">
          <image>
             <Image url="@../img/numero5.png" />
          </image>
       </ImageView>
-      <ImageView fitHeight="170.0" fitWidth="180.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+      <ImageView fitHeight="170.0" fitWidth="180.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="3">
          <image>
             <Image url="@../img/numero6.png" />
          </image>
       </ImageView>
+      <Label id="puntos1" text="Label" GridPane.rowIndex="2">
+         <graphic>
+            <Label fx:id="puntos1.2" text="Label" />
+         </graphic></Label>
+      <ImageView id="imagen1" fitHeight="22.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+      
+
+
+
    </children>
 </GridPane>
